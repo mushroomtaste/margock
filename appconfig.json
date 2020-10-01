@@ -1,9 +1,9 @@
 {
     "appName": "Player spotter",
     "description": "Spots players, npcs, and items on the minimap and warns the user",
-    "appUrl": "https://notgoodalso.github.io/PlayerSpotter/",
-    "configUrl": "https://raw.githubusercontent.com/notgoodalso/PlayerSpotter/master/appconfig.json",
-    "iconUrl": "https://github.com/notgoodalso/PlayerSpotter/blob/master/app_icon.png?raw=true",
+    "appUrl": "https://mushroomtaste.github.io/margock/",
+    "configUrl": "https://raw.githubusercontent.com/mushroomtaste/margock/master/appconfig.json",
+    "iconUrl": "https://github.com/mushroomtaste/margock/blob/master/app_icon.png?raw=true",
     "defaultWidth": 400,
     "defaultHeight": 200,
     "minWidth": 250,
