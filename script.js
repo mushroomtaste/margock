@@ -136,7 +136,7 @@ function searchInterval() {
 	        }
 	        if(players.length > 0){
 	        	alert = true;
-	        	audio.play();
+
 	        }
 	        setStatus(players.length > 0 ? Status.ALERT.p : Status.RUNNING, players.length);
 	    }
