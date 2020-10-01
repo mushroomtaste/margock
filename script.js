@@ -79,13 +79,11 @@ function start() {
 	loadStorage();
 	statusText = document.getElementById("status");
     if (!window.alt1) {
+    	audio.play();
         statusText.innerText = "Alt1 not detected!";
         return false;
     }
     
-    audio.loop = true;
-    audio.play();
-
     container = document.getElementById("container");
     stateButton = document.getElementById("state-button");
     
@@ -134,10 +132,8 @@ function searchInterval() {
 	        for( var a in players ) {
 	        	alt1.overLayRect(a1lib.mixcolor(255, 0, 0), minimap.x + players[a].x, minimap.y + players[a].y, 5, 5, 100, settings.dSize);
 	        }
-	        if(players.length > 0){
-	        	alert = true;
-
-	        }
+	        if(players.length > 0) alert = true;
+	        if (alert = true) {audio.play();}
 	        setStatus(players.length > 0 ? Status.ALERT.p : Status.RUNNING, players.length);
 	    }
         if(settings.npcs) {
