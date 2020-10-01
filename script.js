@@ -132,7 +132,13 @@ function searchInterval() {
 	        	alt1.overLayRect(a1lib.mixcolor(255, 0, 0), minimap.x + players[a].x, minimap.y + players[a].y, 5, 5, 100, settings.dSize);
 	        }
 	        if(players.length > 0) alert = true;
-	        if (alert = true) {audio.play();}
+	        if (alert = true) {
+	        	myAudio.addEventListener('ended', function() {
+    			this.currentTime = 0;
+    			this.play();
+				}, false);
+				myAudio.play();
+	        }
 	        setStatus(players.length > 0 ? Status.ALERT.p : Status.RUNNING, players.length);
 	    }
         if(settings.npcs) {
