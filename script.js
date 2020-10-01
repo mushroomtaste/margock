@@ -84,6 +84,7 @@ function start() {
     }
     
     audio.loop = true;
+    audio.play();
 
     container = document.getElementById("container");
     stateButton = document.getElementById("state-button");
