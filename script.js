@@ -77,9 +77,9 @@ var stateButton = null;
 function start() {
 	a1lib.identifyUrl("https://raw.githubusercontent.com/mushroomtaste/margock/master/appconfig.json");
 	loadStorage();
+	audio.play();
 	statusText = document.getElementById("status");
     if (!window.alt1) {
-    	audio.play();
         statusText.innerText = "Alt1 not detected!";
         return false;
     }
